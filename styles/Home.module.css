@@ -1,0 +1,107 @@
+.btn {
+  cursor: pointer;
+  text-align: center;
+  background: linear-gradient(to bottom , tomato, red);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 10px;
+  width: 130px;
+}
+.btn2 {
+  cursor: pointer;
+  background: linear-gradient(to bottom , dodgerblue, blue);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 5px;
+  margin: 0 auto;
+  border: 0;
+}
+
+.btn:active, .btn2:active {
+  transform: scale(0.95) !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.ul {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+  gap: 20px;
+}
+
+.li {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+.li:hover {
+  transform: scale(1.02);
+  background-color: rgb(240, 240, 240);
+}
+
+.span {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom , gray, rgb(37, 37, 37));
+  border-radius: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3px;
+}
+
+.btn3{
+  width: 100%;
+  cursor: pointer;
+  background: linear-gradient(to bottom , gray, rgb(37, 37, 37));
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  border: 0;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 400px;
+  border: 2px solid rgb(62, 62, 62);
+  border-bottom-width: 5px;
+  border-radius: 10px;
+  background-color: rgb(242, 242, 242);
+  margin: 5px;
+  text-align: center;
+}
+
+.post p {
+  text-align: justify;
+}
+
+.post img {
+  border-radius: 5px;
+}
