@@ -7,9 +7,10 @@ interface Props {
     subtitle: string
     description: string
     image: string
+    slug: string
 }
 
-const PostHead:NextComponentType<BaseContext, {}, Props> = ({title, subtitle, description, image}) => {
+const PostHead:NextComponentType<BaseContext, {}, Props> = ({title, subtitle, description, image, slug}) => {
     return (
         <Head>
             <title>{title}</title>
@@ -19,6 +20,11 @@ const PostHead:NextComponentType<BaseContext, {}, Props> = ({title, subtitle, de
             <meta property="og:title" content={title} />
             <meta property="og:description" content={subtitle} />
             <meta property="og:image" content={image} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:type" content="article" />
+            <meta property="og:locale" content="en_GB" />
+            <link rel="canonical" href={`https://ahmed-link-preview.vercel.app/blog/${slug}`} />
 
             {/* twitter card metadata */}
             <meta name="twitter:card" content="summary" />
